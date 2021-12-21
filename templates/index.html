@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's start a life!</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block app_content %}
+    <a class="btn btn-primary" href="{{ url_for('live') }}">Create life!</a>
+{% endblock %}
+</body>
+</html>

@@ -15,7 +15,8 @@ def home():
 @app.route('/live/')
 def live():
     gen = GameOfLife()
-    gen.form_new_generation()
+    if gen.counter > 0:
+        gen.form_new_generation()
     gen.counter += 1
     return render_template('live.html', gen=gen)
 
